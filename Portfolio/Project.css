@@ -1,0 +1,158 @@
+body{
+    background-color: #233142;
+}
+.hero-section{
+    padding: 60px 40px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero-text{
+    max-width: 50%;
+}
+.hero-text h6{
+    font-size: 20px;
+    color: white;
+}
+.hero-text h5{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+.hero-image{
+    padding: 30px;
+    display: flex;
+    max-width: 45%;
+    justify-content: center;
+}
+.hero-image img{
+    border-radius: 100%;
+    height: 500px;
+    width: 500px;
+}
+.links{
+    /*display: flex;*/
+    cursor: pointer;
+    color: white;
+}
+.links a{
+    animation-name: SlideRight;
+    animation-duration: 1s;
+    animation-delay: calc(1s * var(--i));
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin: 8px;
+    border-radius: 50%;
+    color: cyan;
+}
+.bd{
+    margin: 10px 0px;
+    padding: 16px 0px;
+}
+
+.ab{
+    border: 2px solid #0ef;
+    padding: 13px 28px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    background-color: #0ef;
+    text-shadow: 5px;
+    font-size: 16px;
+    display: inline block;
+}
+.ab:hover{
+    box-shadow: 0 0 10px cyan;
+}
+.links a:hover{
+    box-shadow: 0px 0px 10px ;
+}
+.site:hover{
+    box-shadow: #0ef;
+}
+.text{
+    color: #0ef;
+}
+@keyframes SlideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+h6{
+    animation-name: SlideBottom;
+    animation-duration: 2s;
+}
+h5{
+    animation-name: SlideBottom;
+    animation-duration: 2s;
+}
+p{
+    animation-name: SlideRight;
+    animation-duration: 2s;
+}
+
+.About{
+    padding: 110px 40px;
+    color: white;
+    text-align: center;
+}
+
+.About-container{
+    padding: 10px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    justify-content: center;
+}
+.about-img img{
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+.Project-container{
+    padding: 10px 0px 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+}
+
+.Project1, .Project2, .Project3{
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    border: 2px solid darkblue;
+    box-shadow: 0px 0px 20px cyan;
+    border-radius: 10px;
+    
+}
+.P1, .P2, .P3{
+    border: 2px solid black;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 173, 173);
+    border-radius: 10px;
+}
+.P1:hover, .P2:hover, .P3:hover{
+    box-shadow: 0px 0px 10px #0ef;
+}
